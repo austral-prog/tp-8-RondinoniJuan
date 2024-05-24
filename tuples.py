@@ -1,5 +1,4 @@
 def get_coordinate(record):
-    record = ("Scrimshawed Whale Tooth", "2A")
     return (record[1])
 
 
@@ -10,9 +9,10 @@ def convert_coordinate(coordinate):
 
 
 def create_record(azara_record, rui_record):
-    azara_record = ("Scrimshawed Whale Tooth", "2A")
-    rui_record = ("Deserted Docks", "2A"  "Blue")
-        if azara_record[1] == rui_record[1]:
-            return (azara_record + rui_record)
-        else:
-            return "no coinciden"
+    x1 = azara_record[1]
+    y1, y2 = rui_record[1]
+    y3 = y1 + y2
+    if x1 == y3:
+        return (azara_record + rui_record)
+    else:
+        return "not a match"
